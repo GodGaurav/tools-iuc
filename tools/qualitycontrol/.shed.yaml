@@ -1,0 +1,10 @@
+categories:
+- Quality Control 
+description:  Tool for quality control filtering step 
+homepage_url: https://github.com/EBI-Metagenomics/pipeline-v5/blob/master/tools/qc-filtering/run_quality_filtering.py
+long_description: |
+  Discards sequences that are 99 bp or less, or > 10% N.
+name: qualitycontrol
+owner: iuc
+remote_repository_url: 
+type: unrestricted
