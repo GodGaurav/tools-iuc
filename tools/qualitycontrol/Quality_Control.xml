@@ -1,4 +1,4 @@
-<tool id="Quality_control" name="Discards sequences 99bp or less" version="0.1.0+galaxy0" python_template_version="3.5" profile="21.05">
+<tool id="Quality_control" name="Quality_Control" version="0.1.0+galaxy0" python_template_version="3.5" profile="21.05">
     <description> for quality control </description>
     <command > python Quality_Control.py '$seq_file' '$output_file_name' </command>
     <inputs>
