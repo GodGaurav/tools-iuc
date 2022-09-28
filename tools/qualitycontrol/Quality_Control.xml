@@ -1,0 +1,30 @@
+<tool id="Quality_control" name="Discards sequences 99bp or less" version="0.1.0+galaxy0" python_template_version="3.5" profile="21.05">
+    <description> for quality control </description>
+    <command > python Quality_Control.py '$seq_file' '$output_file_name' </command>
+    <inputs>
+        <param type="data" name="seq_file" format="fastq,fasta" label="Input sequence file for QC" /> 
+    </inputs>
+    <outputs>
+        <data name="output_file_name" format="fasta" />
+    </outputs>
+    <tests> 
+        <test>
+            <param name="seq_file" value="1.fasta"/>
+            <output name="output_file_name" file="3.fasta"/>
+        </test>
+    </tests> 
+    <help><![CDATA[
+        This tool Discard sequences that are 99 bp or less, or > 10% N
+    ]]></help>
+    <citations>
+        <citation type="bibtex">
+@misc{githubrun_quality_filtering.py,
+  author = {LastTODO, FirstTODO},
+  year = {TODO},
+  title = {run_quality_filtering.py},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  url = {https://github.com/EBI-Metagenomics/pipeline-v5/blob/master/tools/qc-filtering/run_quality_filtering.py},
+}</citation>
+    </citations>
+</tool>
